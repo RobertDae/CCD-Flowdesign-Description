@@ -25,8 +25,17 @@ As that they can be stateful like Alan Kay envisioned his cell-like objects. Fun
 
 |  	|   Explanation	|
 |---	|---	|
-|   ![Stateful functional unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/staeful.png)	|   A stateful functional unit. It reads and or writes in-memory state to span processing of several messages.	|
-|   ![Named state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/staeful_named.png)	|   If you like be precise and name the state. 	|
-|   ![Colored state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/staeful_colored.png)	|   Alternatively color the state to distinguish it from state other functional units keep.	|
+|   ![Stateful functional unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/stateful.png)	|   A stateful functional unit. It reads and or writes in-memory state to span processing of several messages.	|
+|   ![Named state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/stateful_named.png)	|   If you like be precise and name the state. 	|
+|   ![Colored state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/stateful_colored.png)	|   Alternatively color the state to distinguish it from state other functional units keep.	|
 
-Note that several function units might share their state!
+Note that several function units might share their state! This is easiest to depict with colored state drums:
+
+![Function units sharing state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/shared_state.png)
+
+If a functional unit only reads from/writes to state and does nothing else, you can drop the "bubble" altogether and focus on the state:
+
+|  	|   Explanation	|
+|---	|---	|
+|   ![Reading state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/read_state.png)	|   Just read from in-memory state.	|
+|   ![Writing state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/write_state.png)	|   Just write to in-memory state. 	|
