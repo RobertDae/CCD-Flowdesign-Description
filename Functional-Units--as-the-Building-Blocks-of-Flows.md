@@ -29,7 +29,7 @@ As that they can be stateful like Alan Kay envisioned his cell-like objects. Fun
 |   ![Named state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/stateful_named.png)	|   If you like be precise and name the state. 	|
 |   ![Colored state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/stateful_colored.png)	|   Alternatively color the state to distinguish it from state other functional units keep.	|
 
-Note that several function units might share their state! This is easiest to depict with colored state drums:
+Note that several functional units might share state. This is easiest to depict with colored state drums:
 
 ![Function units sharing state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/shared_state.png)
 
