@@ -4,4 +4,14 @@ After first teaching "raw" [principles and practices of clean coding](http://cle
 
 At the heart of FD is a visual notation to enable developers to express their mental models of how they think requirements could be met. This visual language is deliberately kept very simple. It should not require extensive studying or special tools to be used. It's for "quick and dirty" sketches on flipcharts and whiteboards to be used by single developers or small teams. It's primary use is _before_ code has been written. It's a _design_ tool, not (!) a documentation tool.
 
-When applied in day to day business common
+When applied in day to day business common flow designs look like this:
+
+![Exhibit 1](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/real_world_examples/exhibit1.jpg)
+
+![Exhibit 2](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/real_world_examples/exhibit2.jpg)
+
+![Exhibit 3](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/real_world_examples/exhibit3.jpg)
+
+Consider them "graphical recordings" of collective thought processes. As such they need not be readily understandable for an outside person. The primary purpose is to develop shared understanding of a solution among participants of a design session - and guide them during the actual coding.
+
+This claim of course requires Flow-Design to be clear about the notational elements, how to use them in conjunction, and also how to translate them into code.
