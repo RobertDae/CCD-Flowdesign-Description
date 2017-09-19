@@ -19,9 +19,9 @@ You can think of functional units as objects. But don't equate them with the thi
 
 > I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages (so messaging came at the very beginning) [...] OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.
 
-Functional units will need to be translated into concrete textual programming language code, but they themselves are nothing like that. They are conceptual building blocks for software solutions.
+In the end functional units will need to be translated into concrete textual programming language code, but they themselves are nothing like that. They are conceptual building blocks for software solutions.
 
-As that they can be stateful like Alan Kay envisioned his cell-like objects. Functional units "are allowed" to hold local state, protect it, and hide its details. If they do so that should be shown in a Flow-Design:
+As that they can be stateful like Alan Kay envisioned his cell-like objects. Functional units "are allowed" to hold local state, protect it, and hide its details. Think of them more as having data, not being data. Functional units are processors, not data structures. And if they need to keep state in order to do their transformation job that should be shown in a Flow-Design:
 
 |  	|   Explanation	|
 |---	|---	|
