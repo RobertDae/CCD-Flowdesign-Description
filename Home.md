@@ -1,0 +1,7 @@
+Writing clean code sounds as if you should write code in a certain way. That's certainly true. But what is also true is that writing code is only the last phase of a multi-step process called _software development_. How clean code is thus does not only depend on some coding techniques or pretty printing rules but starts much earlier. For us at the Clean Code Developer School it's firstly a matter of how you think about a solution what makes and keeps your code clean.
+
+After first teaching "raw" [principles and practices of clean coding](http://clean-code-developer.com) in a pretty standard way we developed a more conceptual and more comprehensive method. This method we're calling _Flow-Design (FD)_ and it's an eclectic approach to software development inspired by many sources.
+
+At the heart of FD is a visual notation to enable developers to express their mental models of how they think requirements could be met. This visual language is deliberately kept very simple. It should not require extensive studying or special tools to be used. It's for "quick and dirty" sketches on flipcharts and whiteboards to be used by single developers or small teams. It's primary use is _before_ code has been written. It's a _design_ tool, not (!) a documentation tool.
+
+When applied in day to day business common
