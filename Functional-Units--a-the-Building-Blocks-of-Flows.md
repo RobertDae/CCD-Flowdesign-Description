@@ -11,5 +11,22 @@ If you just use "bubbles" for FUs you'll be fine. However, it has proven useful 
 |  	|   Explanation	|
 |---	|---	|
 |   ![Generic functional unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/provider.png)	|   A transformation accessing a resource (e.g file, database, TCP-connection).	|
-|   ![Generic functional unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/provider2.png)	|   An alternative way to show resource access.	|
-|   ![Generic functional unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/portal.png)	|   A transformation which gets triggered by a user (or some other software in the environment). Use it to denote a UI (or API).	|
+|   ![Resoure accessing function unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/provider2.png)	|   An alternative way to show resource access.	|
+|   ![Interacting functional unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/portal.png)	|   A transformation which gets triggered by a user (or some other software in the environment). Use it to denote a UI (or API).	|
+
+## Expressing Statefulness
+You can think of functional units as objects. But don't equate them with the things which get instanciated from classes in your object-oriented language of choice. They are more like what [Alan Kay had in mind](http://userpage.fu-berlin.de/~ram/pub/pub_jf47ht81Ht/doc_kay_oop_en) when he coined the term in 1967:
+
+> I thought of objects being like biological cells and/or individual computers on a network, only able to communicate with messages (so messaging came at the very beginning) [...] OOP to me means only messaging, local retention and protection and hiding of state-process, and extreme late-binding of all things.
+
+Functional units will need to be translated into concrete textual programming language code, but they themselves are nothing like that. They are conceptual building blocks for software solutions.
+
+As that they can be stateful like Alan Kay envisioned his cell-like objects. Functional units "are allowed" to hold local state, protect it, and hide its details. If they do so that should be shown in a Flow-Design:
+
+|  	|   Explanation	|
+|---	|---	|
+|   ![Stateful functional unit](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/staeful.png)	|   A stateful functional unit. It reads and or writes in-memory state to span processing of several messages.	|
+|   ![Named state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/staeful_named.png)	|   If you like be precise and name the state. 	|
+|   ![Colored state](https://github.com/ccdschool/flow-design-cheatsheet/blob/master/images/functional_units/staeful_colored.png)	|   Alternatively color the state to distinguish it from state other functional units keep.	|
+
+Note that several function units might share their state!
