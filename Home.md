@@ -7,5 +7,6 @@ Although the visual language used to define software behavior through data proce
 * [Functional Units - The Building Blocks of Flows](https://github.com/ccdschool/flow-design-cheatsheet/wiki/Functional-Units--as-the-Building-Blocks-of-Flows)
 * Relationships between Functional Units
 * 1-Dimensional Data Flows
+* Typing Data
 
 ...more to come...
