@@ -37,6 +37,19 @@ This means:
 
 > A stream of 0 or more data items is flowing, `{}`. Each data items is a list of tuples, `(...)*`. And each tuple consists of two elements, *x* and a collection of *y* values, `y*`.
 
+## Starting/Ending a Flow
+|  	|   Explanation	|
+|---	|---	|
+|   ![Starting a flow](images/1-dim/start.png) 	|   Make starting a flow explicit by letting data flow "from the outside" into the first functional unit.	|
+|   ![Ending a flow](images/1-dim/end.png) 	|   Flows can end by letting data seep away in the final functional unit, maybe because it writes it to some resource. But if you like connect the final FU explicitly to the "outside".	|
+
+## Factories
+|  	|   Explanation	|
+|---	|---	|
+|   ![Calling a constructor](images/1-dim/factory.png) 	|   A factory produces a functional unit to be used downstream. See how the output of `factory` is used for the `doSth` processing step.	|
+|   ![Calling a constructor](images/1-dim/ctor.png) 	|   A constructor is a valid translation of a functional unit. You can use it in your flows as a factory.	|
+
+
 
 
 
