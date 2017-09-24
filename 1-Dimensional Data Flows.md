@@ -1,4 +1,3 @@
-# 1-Dimensional Data Flows
 A 1-dimensional data flow consists of a sequence of functional units (FU). It's a pipeline of arbitrary length:
 
 ![1-dim data flow](images/1-dim/pipeline.png)

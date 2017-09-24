@@ -1,4 +1,3 @@
-# Typing Data
 To describe the data flowing in a Flow Design just put some name between the brackets next to the arrow, like `x` in this example:
 
 ![A tuple of data flowing](images/data_types/singledata2.png)

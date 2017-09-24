@@ -1,4 +1,3 @@
-# Relationships between Functional Units
 Functional units (FU) are the data processors in flow designs. The operate on input data and produce output data - sometimes while using in-memory state or a hardware resource.
 
 In order to work together towards a common goal - some overall software behavior - FUs need to be connected, thus forming data flows and abstraction hierarchies.
