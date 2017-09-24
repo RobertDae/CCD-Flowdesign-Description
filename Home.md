@@ -12,7 +12,6 @@ Although the visual language used to define software behavior through data proce
 * [Typing Data](Typing-Data)
 * [2-Dimensional Data Flows](2-Dimensional-Data-Flows)
 * [3-Dimensional Data Flows](3-Dimensional-Data-Flows)
-* Exceptions
-* Multi-Threading
+* Higher Level Modules
 
 #### Implementation of Flow Designs

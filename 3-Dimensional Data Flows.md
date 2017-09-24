@@ -64,4 +64,22 @@ If you want to make a consuming FU depend on the joint arrival of data from mult
 |   ![Deferred join](images/3-dim/join2.png)   	|   Application of a *join* to assemble data from different stages of the data flow.	|
 |   ![Deferred join](images/3-dim/join2b.png)   	|   Avoid parallel branches by using the `|` operator for data.	|
 
+## Exceptions and Out-of-Band Data
+"Special cases" during data processing in a flow - like invalid data - can be denoted by dedicated output *ports* and branches in the flow. An error message then is just some data flowing along.
 
+But you can use exceptions, too - and still make that in your data flows explicit:
+
+|  	|   Explanation	|
+|---	|---	|
+|   ![Exception](images/3-dim/exception1.png)   	|   Just a "lightning bolt" arrow to denote an exception flowing from some FU.	|
+|   ![Exception](images/3-dim/exception2.png)   	|   The exception can be an alternative output from a FU.	|
+
+However, exceptions are just a special case of out-of-band data, i.e. data not belonging to the main data processing flow.
+
+A more general notation for out-of-band data is the following. Also use it, if several processing steps in da flow share the same "alternative output".
+
+![Out-of-band data](images/3-dim/outofband.png)
+
+In this example `B`, `C`, and also `D` not only output data into the main flow (from `A` to `E`), but also have a second output *port* for *x* data items.
+
+If you're familiar with Functional Programming you could think of the "tube" around the data flow as a *monad*.

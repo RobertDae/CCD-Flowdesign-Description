@@ -69,3 +69,17 @@ Also, the loop is not really interesting. What's interesting is what's happening
 
 Making iteration explicit will help you in the beginning during translation of flow designs. Use it, when you have the feeling that processing single data items requires some effort.
 
+## Multi-Threading
+Functional units in data flows are per definition working in parallel. But often times that does not matter and does not need to be translated into code.
+
+When the need arises, though, it is helpful to mark the boundaries threads. The convention in Flow-Design for that is to use different colors for the data flow segments (and even FUs):
+
+![Multi-threading](images/1-dim/multithreading.png)
+
+In this diagram `A` and `B` are working on the same thread, but `C` is working on a differnt thread.
+
+Here's a larger example to show how coloring helps understanding the implications of multi-threading:
+
+![Multi-threading by example](images/1-dim/alarmclock.png)
+
+The UI starts on its own thread on the left (blue), the clock however is located on another thread (red). The clock's data thus is flowing along on the clock thread through another FU - to finally be consume by the UI on the UI thread. This usually does not work. UI widgets are bound to the UI thread. Hence a special synchronization operation has to be introduced to switch the data from the clock thread to the UI thread.
