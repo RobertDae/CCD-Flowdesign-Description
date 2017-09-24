@@ -5,8 +5,8 @@ Although the visual language used to define software behavior through data proce
 **Table of Contents**
 
 * [Functional Units - The Building Blocks of Flows](https://github.com/ccdschool/flow-design-cheatsheet/wiki/Functional-Units--as-the-Building-Blocks-of-Flows)
-* [Relationships between Functional Units](https://github.com/ccdschool/flow-design-cheatsheet/wiki/Relationships between Functional Units.md)
-* [1-Dimensional Data Flows](https://github.com/ccdschool/flow-design-cheatsheet/wiki/1-Dimensional Data Flows.md)
+* [Relationships between Functional Units](https://github.com/ccdschool/flow-design-cheatsheet/wiki/Relationships%20between%20Functional%20Units.md)
+* [1-Dimensional Data Flows](1-Dimensional%20Data%20Flows.md)
 * [Typing Data](https://github.com/ccdschool/flow-design-cheatsheet/wiki/Typing Data.md)
 * 2-Dimensional Data Flows
 
