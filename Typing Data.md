@@ -11,8 +11,16 @@ You'll probably follow this convention in most cases. But sometimes you want to 
 |  	|   Explanation	|
 |---	|---	|
 |   ![Implicit data type](images/data_types/implicit_type.png)	|  `count` will be translated to an "obvious" primitive data type like `int` or `long`. 	|
-|   ![Explicit data type](images/data_types/explicit_type.png)	|  `count` will be translated to data type specified. The explicit data type is written after the data item name for convenience sake. While designing at a flip chart or whiteboard you mostly think of the meaning of data first, then of its exact type. 	|
-|   ![Custom data type](images/data_types/custom_type.png)	|  A capital letter at the beginning of the data item name denotes a custom data type (which at the same time works as the data description in this case; but you can also give it an explicit name, e.g. `(deliveryAddress:Address`). The first time you're using a custom data type be sure to add a data type description to your Flow Design. This can be done with a small table like shown. 	|
+|   ![Explicit data type](images/data_types/explicit_type.png)	|  `count` will be translated to data type specified. 	|
+The explicit data type is written after the data item name for convenience sake. While designing at a flip chart or whiteboard you mostly think of the meaning of data first, then of its exact type.
+
+|  	|   Explanation	|
+|---	|---	|
+|   ![Custom data type](images/data_types/custom_type.png)	|  A capital letter at the beginning of the data item name denotes a custom data type.  	|
+
+A custom data type can at the same time work as the data description like in the above case; but you can also give it an explicit name, e.g. `(deliveryAddress:Address`).
+
+The first time you're using a custom data type be sure to add a data type description to your Flow Design. This can be done with a small table like shown.
 
 The same conventions of course apply to state data of function units, e.g.
 
