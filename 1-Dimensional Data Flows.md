@@ -49,7 +49,23 @@ This means:
 |   ![Calling a constructor](images/1-dim/factory.png) 	|   A factory produces a functional unit to be used downstream. See how the output of `factory` is used for the `doSth` processing step.	|
 |   ![Calling a constructor](images/1-dim/ctor.png) 	|   A constructor is a valid translation of a functional unit. You can use it in your flows as a factory.	|
 
+## Iteration
+Data flows are declarative descriptions of solutions. They lack control structures like loops. And this should not be compensated by introducing circular flows! Rather make function units "collection-oriented": don't let single items flow, but collections. This is a marked difference between the usual "imperative thinking" and "flow thinking".
 
+However, at the beginning when your're wrapping your head around Flow-Design it might seem difficult to see the handling of single data items behind the collection-oriented FUs.
 
+This is a typical example of implicit iteration:
 
+![Implicit iteration](images/1-dim/implicititeration.png)
+
+The flow focusses on a collection of integers being transformed into a collection of strings. Of course *within* `Convert to strings` there will be a loop at work. But that's not shown in the data flow.
+
+Also, the loop is not really interesting. What's interesting is what's happening to each input data item. 
+
+|  	|   Explanation	|
+|---	|---	|
+|   ![Depend on single item processing](images/1-dim/dependentiteration.png) 	|   If you want to make that very clear you can extract a single item FU and make the collection processing FU depend on it.	|
+|   ![Make looping explicit](images/1-dim/explicititeration.png) 	|   Alternative emphasize collection processing by prefixing the FU with a `*` like this.	|
+
+Making iteration explicit will help you in the beginning during translation of flow designs. Use it, when you have the feeling that processing single data items requires some effort.
 
