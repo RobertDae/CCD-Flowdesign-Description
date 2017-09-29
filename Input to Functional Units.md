@@ -6,7 +6,7 @@ You take the name of the functional unit and turn it into a function:
 
 `... f(...) { ... }`
 
-Whatever is flowing into the functional unit becomes the parameters of the function:
+Whatever data is flowing into the functional unit becomes the parameters of the function:
 
 |  	|   Explanation	|
 |---	|---	|
@@ -21,7 +21,7 @@ Notice that the data flowing in these examples is written with small letters (e.
 ## Classes for Functions
 In some programming languages functions can only be defined inside a class.
 
-If that's the case for your target language, then you need to assign your functional units to at least on level of modules, before you translate them into code.
+If that's the case for your target language, then you need to assign your functional units to at least one level of modules, before you translate them into code.
 
 ![Input in module](images/implementing_input/inputwithmodule.png)
 
@@ -42,7 +42,7 @@ Sometimes *overloading* will do the job. Both inputs are translated into same na
 |---	|---	|
 |   ![Two inputs](images/implementing_input/twoinputs.png) 	|   `...f(X x) {...}` **and** `...f(Y y) {...}`	|
 
-But usually the flow design should be more specific and distinguish the inputs with portnames. Then the portnames are used as function names - and the function name can become the name of the class containing those functions:
+But usually the flow design should be more specific and distinguish the inputs with portnames. Then the portnames are used as function names - and the name of the functional unit could become the name of the class containing those functions:
 
 ![Two named inputs](images/implementing_input/twonamedinputs.png)
 
