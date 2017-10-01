@@ -20,5 +20,5 @@ Although the visual language used to define software behavior through data proce
 * [Introduction](Introduction-to-Implementation)
 * [Input to Functional Units](Input-to-Functional-Units)
 * [Output from Functional Units](Output-from-Functional-Units)
-* Integrating Functional Units
-* Functional Units with Dependencies
+* [Integrating Functional Units](Integrating-Functional-Units)
+* [Functional Units with Dependencies](Functional-Units-with-Dependencies)
