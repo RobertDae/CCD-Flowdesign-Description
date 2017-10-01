@@ -86,6 +86,23 @@ void f(..., Action<Y> onY) {
   ...
 }
 ```
+
+If the number of output data items is not known in advance and the final data item cannot easily be recognized by downstream functional units the issuing function has to explicitly end a stream with a special *end-of-stream (EOS)* data item.
+
+Depending on the output data type this can be a special value or globally known object or simple `null`, e.g.
+
+```
+void f(..., Action<Y> onY) {
+  ...; 
+  onY(y);
+  ...
+  onY(...);
+  ...
+  onY(...);
+  ...
+  onY(null);
+}
+```
  
 #### Output as an Iterator
 For a single streamed output *port* there is another option to translate it: an iterator.
@@ -101,6 +118,8 @@ IEnumerable<Y> f(...) {
 ```
 
 This also allows the function not to return any data or multiple data items per input. However a consuming downstream function will be called in any case - even if there's no data to process by "pulling" on the iterator.
+
+Also, with iterators consuming functional units don't have to worry about the end of the stream.
 
 The more general implementation for streamed output is a continuation, though. It can be used with any number of output *ports*, it requires no specific handling on the consumer side, and it works across thread boundaries.
 
